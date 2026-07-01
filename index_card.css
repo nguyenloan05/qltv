@@ -1,0 +1,73 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.card-item {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.card-item:hover {
+  transform: translateY(-6px);
+  border-color: #3498db;
+}
+
+.avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.st-0 {
+  background: #fff3cd;
+  color: #856404;
+}
+.st-1 {
+  background: #d4edda;
+  color: #155724;
+}
+.st-2 {
+  background: #f8d7da;
+  color: #721c24;
+}
+.st-3 {
+  background: #ecf0f1;
+  color: #7f8c8d;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.btn-blue {
+  background: #3498db;
+  color: white;
+}
+
+.btn-red {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

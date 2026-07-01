@@ -1,0 +1,167 @@
+/* Container chính của view */
+.main-view-container {
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.view-header {
+    margin-bottom: 25px;
+}
+
+.view-header h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.view-header p {
+    color: #7f8c8d;
+    margin: 5px 0 0 0;
+}
+
+/* Thẻ chứa Toolbar */
+.toolbar-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+.toolbar-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Tự động tạo khoảng cách 20px giữa các thẻ con trực tiếp */
+}
+
+.toolbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Tự xuống dòng nếu màn hình nhỏ */
+}
+
+/* Search Box chuyên nghiệp */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 15px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-box i { color: #95a5a6; }
+
+.search-box input {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.search-box button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap; 
+    min-width: fit-content;
+}
+
+.btn-add-new {
+    background: #2ecc71;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+/* Bảng danh sách */
+.table-container-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Làm đẹp Table bên trong card */
+.table-responsive table {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+
+.table-responsive th {
+    background-color: #f8f9fa !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+/* Container chính của phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Khoảng cách giữa các nút */
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Style chung cho các nút số và nút mũi tên */
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;  
+    height: 32px; /* Chiều cao bằng độ rộng để tạo hình vuông/tròn */
+    text-decoration: none;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px; /* Bo góc nhẹ */
+    font-size: 13px;    /* Chữ nhỏ đi */
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột qua */
+.pagination a:hover:not(.active):not(.disabled) {
+    background-color: #f8f9fa;
+    border-color: #3498db;
+    color: #3498db;
+}
+
+/* Trạng thái trang hiện tại */
+.pagination a.active {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Trạng thái nút bị vô hiệu hóa (với trang đầu/cuối) */
+.pagination a.disabled {
+    color: #ccc;
+    pointer-events: none;
+    background-color: #f8f9fa;
+    border-color: #eee;
+}
+
+/* Badge trạng thái */
+.badge {
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border: 1px solid transparent;
+}
