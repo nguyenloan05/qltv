@@ -1,83 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Student Dashboard</title>
-    <link rel="stylesheet" href="qlsv.css">
-</head>
-<body>
+    <link rel="stylesheet" href="qlsv.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>📚 XIN CHÀO CÁC BẠN</h2>
 
-<div class="sidebar">
-    <h2>📚 EduManage</h2>
+      <a href="#">🏠 Dashboard</a>
+      <a href="#">👨‍🎓 Sinh viên</a>
+      <a href="#">📖 Môn học</a>
+      <a href="#">📊 Điểm</a>
+      <a href="#">⚙️ Cài đặt</a>
+    </div>
 
-    <a href="#">🏠 Dashboard</a>
-    <a href="#">👨‍🎓 Sinh viên</a>
-    <a href="#">📖 Môn học</a>
-    <a href="#">📊 Điểm</a>
-    <a href="#">⚙️ Cài đặt</a>
-</div>
-
-<div class="main">
-
-    <header>
+    <div class="main">
+      <header>
         <h1>Dashboard</h1>
         <button>+ Thêm mới</button>
         <h3>Tìm kiếm</h3>
         <button>- Xóa</button>
-    </header>
+      </header>
 
-    <div class="cards">
-
+      <div class="cards">
         <div class="card">
-            <h3>120</h3>
-            <p>Sinh viên</p>
+          <h3>120</h3>
+          <p>Sinh viên</p>
         </div>
 
         <div class="card">
-            <h3>18</h3>
-            <p>Môn học</p>
+          <h3>18</h3>
+          <p>Môn học</p>
         </div>
 
         <div class="card">
-            <h3>12</h3>
-            <p>Giảng viên</p>
+          <h3>12</h3>
+          <p>Giảng viên</p>
         </div>
+      </div>
 
+      <table>
+        <tr>
+          <th>Mã SV</th>
+          <th>Họ tên</th>
+          <th>Lớp</th>
+          <th>Điểm TB</th>
+        </tr>
+
+        <tr>
+          <td>SV001</td>
+          <td>Nguyễn Văn A</td>
+          <td>CNTT1</td>
+          <td>8.5</td>
+        </tr>
+
+        <tr>
+          <td>SV002</td>
+          <td>Trần Thị B</td>
+          <td>CNTT2</td>
+          <td>9.0</td>
+        </tr>
+
+        <tr>
+          <td>SV003</td>
+          <td>Lê Văn C</td>
+          <td>CNTT3</td>
+          <td>7.8</td>
+        </tr>
+      </table>
     </div>
-
-    <table>
-
-        <tr>
-            <th>Mã SV</th>
-            <th>Họ tên</th>
-            <th>Lớp</th>
-            <th>Điểm TB</th>
-        </tr>
-
-        <tr>
-            <td>SV001</td>
-            <td>Nguyễn Văn A</td>
-            <td>CNTT1</td>
-            <td>8.5</td>
-        </tr>
-
-        <tr>
-            <td>SV002</td>
-            <td>Trần Thị B</td>
-            <td>CNTT2</td>
-            <td>9.0</td>
-        </tr>
-
-        <tr>
-            <td>SV003</td>
-            <td>Lê Văn C</td>
-            <td>CNTT3</td>
-            <td>7.8</td>
-        </tr>
-
-    </table>
-
-</div>
-
-</body>
+  </body>
 </html>
