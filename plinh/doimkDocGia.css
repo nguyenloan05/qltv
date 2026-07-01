@@ -1,0 +1,142 @@
+.content-wrapper {
+    padding: 30px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.profile-header {
+    background: #ffffff;
+    padding: 30px 40px 10px;
+    text-align: center;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.profile-header h3 {
+    margin: 0;
+    font-weight: 800;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.profile-body {
+    padding: 40px;
+}
+
+.info-group-title {
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 20px;
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 2px solid #f1f5f9;
+    transition: 0.3s;
+    background: #fff;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-save {
+    flex: 2;
+    padding: 15px;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-save:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-cancel {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f1f5f9;
+    color: #475569;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+@media (max-width: 650px) {
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        margin: 0;
+        border-radius: 0;
+    }
+}

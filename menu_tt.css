@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: #2b3a4a; /* Màu dark blue khớp với ảnh */
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    color: #ecf0f1;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: all 0.3s;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+/* Header của Menu */
+.sidebar-header {
+    padding: 25px 15px;
+    text-align: center;
+    background: #1a252f;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-header h2 {
+    font-size: 18px;
+    color: #f1c40f;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 5px 0;
+}
+
+.sidebar-menu a {
+    color: #bdc3c7;
+    text-decoration: none;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    font-size: 14px;
+    white-space: nowrap;
+    position: relative;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-menu a i {
+    width: 25px;
+    font-size: 16px;
+    margin-right: 12px;
+    text-align: center;
+}
+
+/* Hover + Active */
+.sidebar-menu a:hover {
+    background: #34495e;
+    color: #fff;
+    border-left-color: #f1c40f;
+}
+
+.sidebar-menu li.active > a {
+    background: #1e2b37;
+    color: #fff;
+    border-left-color: #f1c40f;
+}
+
+/* Submenu */
+.submenu {
+    background: #1e2b37;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.sidebar-menu li:hover .submenu {
+    max-height: 400px;
+}
+
+.submenu a {
+    padding: 10px 18px 10px 50px;
+    font-size: 13px;
+    color: #95a5a6;
+    display: flex;
+    align-items: center;
+}
+
+.submenu a:hover {
+    background: #2b3a4a;
+    color: #f1c40f;
+}
+
+.submenu a.text-warning {
+    color: #f1c40f !important;
+}
+.submenu a.text-warning i {
+    color: #f1c40f !important;
+}
+
+/* Footer */
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    color: #e74c3c;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    color: #ff7675;
+    background: rgba(231, 76, 60, 0.1);
+    border-left: 4px solid #e74c3c;
+}
+
+/* Nội dung chính - margin-left được xử lý bởi div cha trong index_tt.php */
+.content-wrapper {
+    padding: 40px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
