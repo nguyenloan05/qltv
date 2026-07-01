@@ -1,0 +1,154 @@
+.main-content {
+    margin-left: 260px;
+
+    padding: 30px;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+}
+
+.header-title h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+}
+
+
+.search-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-section input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #edf2f7;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-section input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.btn-search {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-search:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+}
+
+
+.table-container {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 18px 15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+tbody tr:hover {
+    background-color: #f8fbff;
+}
+
+.book-img {
+    width: 65px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tag-loai {
+    background: #e1f5fe;
+    color: #0288d1;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-detail {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: 1px solid #3498db;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-detail:hover {
+    background: #3498db;
+    color: white;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 10px 18px;
+    background: #fff;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.pagination a.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.pagination a:hover:not(.active) {
+    background: #edf2f7;
+    border-color: #cbd5e0;
+}
