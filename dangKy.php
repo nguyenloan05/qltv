@@ -47,7 +47,7 @@
                             <div id="meter" class="strength-meter"></div>
                             <small id="meter-text" class="text-muted" style="font-size: 0.75rem;"></small>
                             <!-- <small class="error-label" id="err-password">Mật khẩu phải từ 6 ký tự trở lên.</small> -->
-                            <small class="error-label" id="err-password">Mật khẩu phải từ 6 ký tự trở lên, không chứa dấu tiếng Việt và không khoảng trắng.</small>
+                            <small class="error-label" id="err-password">Mật khẩu phải từ 6 ký tự trở lên, không chứa dấu tiếng Việt, không khoảng trắng.</small>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label required">Xác nhận mật khẩu</label>
@@ -55,7 +55,7 @@
                                 <input type="password" class="form-control" id="confirm_password" required>
                                 <span class="input-group-text toggle-pass" data-target="confirm_password"><i class="fas fa-eye"></i></span>
                             </div>
-                            <small class="error-label" id="err-confirm">Mật khẩu xác nhận không trùng khớp.</small>
+                            <small class="error-label" id="err-confirm">Mật khẩu xác nhận không trùng khớp!</small>
                         </div>
                     </div>
 
