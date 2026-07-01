@@ -1,0 +1,47 @@
+/* Style cho các thông báo hệ thống (Alerts) */
+.alert {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 5px solid; /* Tạo điểm nhấn bên trái */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.msg-success { 
+    background: #d4edda; 
+    color: #155724; 
+    border-color: #28a745; 
+}
+
+.msg-danger { 
+    background: #f8d7da; 
+    color: #721c24; 
+    border-color: #dc3545; 
+    font-weight: 600;
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.msg-warning { 
+    background: #fff3cd; 
+    color: #856404; 
+    border-color: #ffc107; 
+}
+
+.msg-error { 
+    background: #f8d7da; 
+    color: #721c24; 
+    border-color: #e4606d;
+}
+
+/* Hiệu ứng rung khi bị chặn (error_overdue, error_unpaid) */
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}
