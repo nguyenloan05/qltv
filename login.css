@@ -1,0 +1,156 @@
+.sidebar {
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
+    position: fixed !important;
+    height: 100vh !important;
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    box-sizing: border-box !important;
+}
+
+.main-content {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    box-sizing: border-box;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.login-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #2c3e50;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.college-logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.login-header h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.login-header p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.forgot-pass {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background: #1a252f;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.support-info {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #bdc3c7;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.support-info i {
+    margin-right: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #606266;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.forgot-pass:hover,
+.login-footer a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+.login-footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
