@@ -1,0 +1,260 @@
+.page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border-left: 5px solid #bdc3c7;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  color: #2c3e50;
+}
+
+.card-content p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: 8px;
+  background-color: #f1f2f6;
+  color: #57606f;
+}
+
+.badge.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+
+.badge.primary {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+
+.badge.danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-danger {
+  background-color: #eb4d4b;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #ff5252;
+  box-shadow: 0 4px 12px rgba(235, 77, 75, 0.4);
+}
+
+@media (min-width: 768px) {
+  .list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.register-card,
+.status-waiting,
+.card-official,
+.status-locked {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.status-waiting {
+  text-align: center;
+  padding: 30px;
+  background: #fffbe6;
+
+  border: 1px solid #ffe58f;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.icon-clock {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.alert-orange {
+  background-color: #fff7e6;
+  border-left: 5px solid #ffa940;
+  padding: 10px;
+  margin: 15px 0;
+  color: #d46b08;
+}
+
+.sub-note {
+  font-size: 0.9rem;
+  color: #8c8c8c;
+  font-style: italic;
+}
+
+.preview-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 1px solid #e9ecef;
+}
+
+.preview-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.preview-row:last-child {
+  border-bottom: none;
+}
+
+.preview-row strong {
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.preview-row span {
+  color: #212529;
+  font-weight: 500;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #219150;
+}
+
+.btn-container {
+  margin-top: 15px;
+}
+
+.card:has(.badge.success) {
+  border-left-color: #2ecc71;
+}
+
+.card:has(.badge.primary) {
+  border-left-color: #3498db;
+}
+
+.card:has(.badge.danger) {
+  border-left-color: #e74c3c;
+}
+
+.card-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-official-simple {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 650px;
+  border: 1px solid #f0f0f0;
+}
+
+.official-title {
+  color: #228b22 !important;
+  font-weight: 700 !important;
+  font-size: 1.6rem !important;
+  text-align: center;
+  margin-bottom: 30px !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.card-details {
+  padding-left: 20px;
+}
+
+.card-details p {
+  margin: 12px 0;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.card-details strong {
+  color: #666;
+  width: 120px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#docgiaCardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
